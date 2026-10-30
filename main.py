@@ -22,8 +22,9 @@ if __name__ == "__main__":
     tasa = pedir_numero("Tasa anual en % (ej. 12): ") / 100
     anios = int(pedir_numero("Plazo en años: "))
     aportacion = pedir_numero("Aportación mensual: ")
+    inflacion = pedir_numero("Infalcion anual en %: ") / 100
 
-    saldo = calcular_saldo_final(capital, tasa, anios, aportacion)
+    saldo = calcular_saldo_final(capital, tasa, anios, aportacion) / (1 + inflacion) ** anios
     total_aportado = capital + aportacion * anios * 12
     intereses = saldo - total_aportado
 
