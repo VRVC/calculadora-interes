@@ -10,7 +10,7 @@ def calcular_saldo_final(capital_inicial, tasa_anual, anios, aportacion_mensual)
 
 if __name__ == "__main__":
     capital = 10_000
-    tasa = 0.10
+    tasa = 0.12
     anios = 5
     aportacion = 1_000
 
