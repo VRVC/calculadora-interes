@@ -27,6 +27,8 @@ Dado un capital inicial, una tasa anual, un plazo en años y una aportación men
    ```
    python main.py
    ```
+ 4. Ingresa tus datos:
+
  ## Ejemplo
 
  Con $10,000 iniciales, tasa del 12% anual, 5 años y $1,000 mensuales:
@@ -39,6 +41,6 @@ Dado un capital inicial, una tasa anual, un plazo en años y una aportación men
 
  # Próximas mejoras
 
- - [ ] Pedir los datos al usuario en lugar de tenerlos fijos en el código
+ - [x] Pedir los datos al usuario en lugar de tenerlos fijos en el código
  - [ ] Ajustar el resultado por inflación
  - [ ] Graficar la evolución del saldo

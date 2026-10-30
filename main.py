@@ -8,11 +8,20 @@ def calcular_saldo_final(capital_inicial, tasa_anual, anios, aportacion_mensual)
         
     return saldo
 
+def pedir_numero(mensaje):
+    """ Pide un número al usuario y repite la pregunta si la entrada no es válida."""
+    while True:
+        texto = input(mensaje)
+        try:
+            return float(texto)
+        except ValueError:
+            print("Eso no es un número válido. Intenta de nuevo.")
+            
 if __name__ == "__main__":
-    capital = 10_000
-    tasa = 0.12
-    anios = 5
-    aportacion = 1_000
+    capital = pedir_numero("Capital inicial:")
+    tasa = pedir_numero("Tasa anual en % (ej. 12): ") / 100
+    anios = int(pedir_numero("Plazo en años: "))
+    aportacion = pedir_numero("Aportación mensual: ")
 
     saldo = calcular_saldo_final(capital, tasa, anios, aportacion)
     total_aportado = capital + aportacion * anios * 12
@@ -20,4 +29,4 @@ if __name__ == "__main__":
 
     print(f"Saldo final:       ${saldo:,.2f}")
     print(f"Total aportado:    ${total_aportado:,.2f}")
-    print(f"Intereses ganados: ${intereses:,.2f}")
+    print(f"Intereses ganados: ${intereses:,.2f}") 
