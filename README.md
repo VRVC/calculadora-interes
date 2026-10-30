@@ -42,5 +42,5 @@ Dado un capital inicial, una tasa anual, un plazo en años y una aportación men
  # Próximas mejoras
 
  - [x] Pedir los datos al usuario en lugar de tenerlos fijos en el código
- - [ ] Ajustar el resultado por inflación
+ - [x] Ajustar el resultado por inflación
  - [ ] Graficar la evolución del saldo
